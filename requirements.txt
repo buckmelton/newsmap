@@ -1,0 +1,8 @@
+streamlit
+folium
+streamlit-folium
+trafilatura=2.0.0
+beautifulsoup4
+google-generativeai
+python-dotenv
+requests
