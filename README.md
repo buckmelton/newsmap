@@ -5,6 +5,18 @@ It extracts **locations** (cities, states, countries, landmarks) from a news art
 
 ---
 
+## Live App
+https://planetnewsmap.streamlit.app/
+
+Test URLs:
+https://www.cnn.com/2025/09/05/sport/nfl-week-1-eagles-cowboys
+
+https://www.cnn.com/2025/09/08/middleeast/spain-pm-pedro-sanchez-israel-travel-ban-intl
+
+https://apnews.com/article/nepal-protest-social-media-ban-89cf500969536cf2a35c3fb884cfa620
+
+https://apnews.com/article/brazil-bolsonaro-coup-trial-513fff1adc42b1ff60754eb2ab0f29ae
+
 ## Features
 
 - Input a **news article URL** or paste raw article text
@@ -56,7 +68,7 @@ pip install -r requirements.txt
 ### 4. Configure API key
 Create a .env file in the project root:
 ```env
-GEMINI_API_KEY=your_api_key_here
+GOOGLE_API_KEY=your_api_key_here
 ```
 
 ---
@@ -80,11 +92,10 @@ Open http://localhost:8501 in your browser.
 
 ## Improvements (Next Steps)
 
-1. Use Gemini-1.5-pro fallback if Gemini-1.5-flash fails parsing
-2. Add caching for geocoding results
-3. Improve prompt for richer event summaries
+1. Improve choice of correct locations when location is ambguous (e.g "City Hall")
+2. Use Gemini-1.5-pro fallback if Gemini-1.5-flash fails parsing
+3. Add caching for geocoding results
 4. Export results as CSV/GeoJSON
-5. Deploy via Streamlit Cloud or Docker
 
 ---
 
