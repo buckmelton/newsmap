@@ -25,7 +25,7 @@ https://apnews.com/article/brazil-bolsonaro-coup-trial-513fff1adc42b1ff60754eb2a
   - Locations (city, state, country, landmark)
   - Confidence score (0.0–1.0)
   - One–two sentence summary of events at each location
-- Filters out low-confidence results (`confidence < 0.90`)
+- Filters out low-confidence results (confidence < 0.90)
 - Geocodes locations via OpenStreetMap Nominatim
 - Plots results on an interactive Leaflet/Folium map with clean Carto Light tiles
 - Popups show location name, confidence, and event summary
