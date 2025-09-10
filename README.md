@@ -9,6 +9,7 @@ It extracts locations (cities, states, countries, landmarks) from a news article
 https://planetnewsmap.streamlit.app/
 
 Test URLs:
+
 https://www.cnn.com/2025/09/05/sport/nfl-week-1-eagles-cowboys
 
 https://www.cnn.com/2025/09/08/middleeast/spain-pm-pedro-sanchez-israel-travel-ban-intl
