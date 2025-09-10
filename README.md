@@ -1,7 +1,7 @@
 # 🌍 NewsMap - News Article Location Mapper
 
-This project is a **take-home coding challenge** for Planet.com.  
-It extracts **locations** (cities, states, countries, landmarks) from a news article using **Google Gemini**, geocodes them with **OpenStreetMap**, and displays them on an **interactive map** built with **Streamlit + Folium**.
+This project is a take-home coding challenge for Planet.com.  
+It extracts locations (cities, states, countries, landmarks) from a news article using Google Gemini, geocodes them with OpenStreetMap, and displays them on an interactive map built with Streamlit + Folium.
 
 ---
 
@@ -19,15 +19,15 @@ https://apnews.com/article/brazil-bolsonaro-coup-trial-513fff1adc42b1ff60754eb2a
 
 ## Features
 
-- Input a **news article URL** or paste raw article text
+- Input a news article URL or paste raw article text
 - Extracts:
-  - **Locations** (city, state, country, landmark)
-  - **Confidence score** (0.0–1.0)
-  - **One–two sentence summary** of events at each location
+  - Locations (city, state, country, landmark)
+  - Confidence score (0.0–1.0)
+  - One–two sentence summary of events at each location
 - Filters out low-confidence results (`confidence < 0.90`)
-- Geocodes locations via **OpenStreetMap Nominatim**
-- Plots results on an interactive **Leaflet/Folium map** with clean **Carto Light tiles**
-- Popups show **location name, confidence, and event summary**
+- Geocodes locations via OpenStreetMap Nominatim
+- Plots results on an interactive Leaflet/Folium map with clean Carto Light tiles
+- Popups show location name, confidence, and event summary
 - Auto-zooms to fit all identified locations
 
 ---
