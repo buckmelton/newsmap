@@ -78,13 +78,10 @@ def extract_locations(article_text: str):
 
     # Parse JSON safely
     try:
-        print(raw)
-        print('******************')
         locations = json.loads(raw)
         if not isinstance(locations, list):
             locations = locations.get("locations", 0)
             
-        print(locations)
         return locations
     except Exception as e:
         print("Error parsing Gemini response:", e)
