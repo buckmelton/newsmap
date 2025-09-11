@@ -93,10 +93,18 @@ Open http://localhost:8501 in your browser.
 
 ## Improvements (Next Steps)
 
-1. Improve choice of correct locations when location is ambguous (e.g "City Hall")
-2. Use Gemini-1.5-pro fallback if Gemini-1.5-flash fails parsing
-3. Add caching for geocoding results
-4. Export results as CSV/GeoJSON
+1. Decomposition of code for better encapsulation and maintainability.
+   - In particular, the main function and the extract_locations function are long and should probably be decomposed.
+
+1. Improve choice of correct locations when location is ambguous (e.g "City Hall").
+   - The geocoding in the code doesn't currently use article context, so in an article about San Francisco, "City Hall" may end up being geocoded to a "City Hall" in some other city.
+   - Fix this by using the other known locations in the article to provide context for geocoding ambiguous locations.
+
+1. Use Gemini-1.5-pro fallback if Gemini-1.5-flash fails parsing
+
+1. Add caching for geocoding results
+
+1. Export results as CSV/GeoJSON
 
 ---
 
